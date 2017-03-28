@@ -1,6 +1,6 @@
 ﻿# このソフトウェアについて
 
-GitHubのライセンスDBを作成する。
+GitHubのライセンスDBにデータを挿入する。
 
 # 開発環境
 
@@ -14,9 +14,10 @@ GitHubのライセンスDBを作成する。
 
 * [GitHub](https://github.com/)
     * [アカウント](https://github.com/join?source=header-home)
-    * [AccessToken](https://github.com/settings/tokens)
-    * [Two-Factor認証](https://github.com/settings/two_factor_authentication/intro)
+        * [AccessToken](https://github.com/settings/tokens)
+        * [Two-Factor認証](https://github.com/settings/two_factor_authentication/intro)
     * [API v3](https://developer.github.com/v3/)
+        * [License API](https://developer.github.com/v3/licenses/)
 
 # 準備
 
@@ -47,7 +48,7 @@ if __name__ == "__main__":
 # 実行
 
 ```dosbatch
-bash ./Licenses/Create.sh
+python3 Main.py
 ```
 
 # 結果
